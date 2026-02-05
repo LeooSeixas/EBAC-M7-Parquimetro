@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parquímetro</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <section class="interface">
+                <div class="parkTime">
+                    <label for="zone">Selecione uma área de estacionamento:</label>
+                    <select id="zone" required>
+                        <option value="" disabled selected hidden>Selecionar</option>
+                        <option value="green">ZONA VERDE</option>
+                        <option value="blue">ZONA AZUL</option>
+                    </select>
+                        <label>Valor à pagar</label>
+                        <input type="number" id="deposit" placeholder="Ex.: R$3,00">
+                    <div class="calculate">
+                        <button class="btn" onclick="parktime.calculate()">Calcular tempo </button>
+                        <p id="time"> O tempo aparecerá aqui.</p>
+                        <p id="change"></p>
+                        <p id="add"></p>
+                    </div>
+                    <p id="errorText"></p>
+                    <button class="btn" onclick="timer.start()">Iniciar tempo</button>
+                    <p id="timerTxt"></p>
+                    <p id="countdown"></p>
+                </div>
+            </section>
+        </main>
+    </body>
+    </html>
