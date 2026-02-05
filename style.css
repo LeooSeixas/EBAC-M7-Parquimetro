@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: wheat;
+    padding: 5px;
+}
+
+.parkTime {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px;
+    margin: 5px;
+}
+
+select:invalid, select:has(option[value=""]:checked) {
+    color: gray !important;
+}
+
+select option {
+    color: black;
+}
+
+select:valid {
+    color: black !important;
+}
+
+.calculate{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin-right: 5px;
+    cursor: pointer;
+}
